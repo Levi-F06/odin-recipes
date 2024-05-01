@@ -1,0 +1,64 @@
+
+body {
+    background-color: #FFEBE7;
+}
+* {
+    color: #495867;
+    box-sizing: border-box;
+}
+h1 {
+    display: flex;
+    justify-content: center;
+}
+.center-text {
+    display: flex;
+    justify-content: center;
+}
+
+/* Exclusive to home page  */
+/* It felt silly to make a separate file for these */
+
+#links {
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    width: 80%;
+    flex-wrap: wrap;
+}
+.link {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-width: 200px;
+}
+.image-box {
+    position: relative;
+
+}
+.image-box::after {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+}
+.home-image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.home-text {
+    margin: 5% auto;
+}
+.home-line {
+    background-color: #8FCB9B;
+    margin: 5% auto;
+    transition: all .2s;
+}
+.link:hover .home-line {
+    width: 50%;
+    height: 1%;
+    padding: 1%;
+    border: none;
+    border-radius: 10%;
+    transition: all .2s;
+}
