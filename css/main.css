@@ -68,3 +68,25 @@ a:active {
 .link:active .home-text {
     color: #8FCB9B;
 }
+
+/* This is for the recipes pages  */
+
+.recipe {
+    margin-left: 5%;
+}
+figure {
+    margin: auto;
+    width: 50%;
+    border: 5px solid #8FCB9B;
+    padding: 1%;
+}
+figure img {
+    width: 100%;
+}
+.fig-text {
+    display: flex;
+    justify-content: center;
+}
+.directions li {
+    width: 50%;
+}
